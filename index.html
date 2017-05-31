@@ -175,7 +175,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Accueil
+            Home
           </a>
         </li>
       
@@ -238,6 +238,119 @@
             
               
                 
+                <a class="post-title-link" href="/2017/05/31/optimize-keyboard/" itemprop="url">
+                  Optimize keyboard
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-05-31T23:50:28+08:00" content="2017-05-31">
+              2017-05-31
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>碍于设备屏幕小问题，最大限度方案客户操作方便，减少切换，尽量完善输入法样式<br>editText.setKeyListener(listener);</p>
+<p> KeyListener listener = new NumberKeyListener() {</p>
+<pre><code>@Override
+protected char[] getAcceptedChars() {
+    char[] chars = new char[]{&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;, &apos;7&apos;, &apos;8&apos;, &apos;9&apos;, &apos;X&apos;};
+    return chars;
+</code></pre><p>//            return new char[0];<br>        }</p>
+<pre><code>    /**
+     * 0：无键盘,键盘弹不出来
+     * 1：英文键盘
+     * 2：模拟键盘
+     * 3：数字键盘
+     *
+     * @return
+     */
+    @Override
+    public int getInputType() {
+        return 3;
+    }
+};
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/05/21/storage-path/" itemprop="url">
                   storage path
                 </a>
@@ -251,7 +364,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-05-21T23:38:51+08:00" content="2017-05-21">
               2017-05-21
             </time>
@@ -345,7 +458,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-04-30T23:54:28+08:00" content="2017-04-30">
               2017-04-30
             </time>
@@ -439,7 +552,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-04-16T20:39:34+08:00" content="2017-04-16">
               2017-04-16
             </time>
@@ -533,7 +646,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-03-22T01:00:52+08:00" content="2017-03-22">
               2017-03-22
             </time>
@@ -626,7 +739,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-03-08T01:54:04+08:00" content="2017-03-08">
               2017-03-08
             </time>
@@ -719,7 +832,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-02-28T23:53:19+08:00" content="2017-02-28">
               2017-02-28
             </time>
@@ -812,7 +925,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-02-21T23:56:11+08:00" content="2017-02-21">
               2017-02-21
             </time>
@@ -905,7 +1018,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-02-14T00:48:40+08:00" content="2017-02-14">
               2017-02-14
             </time>
@@ -998,102 +1111,9 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posté le</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2017-02-13T23:57:23+08:00" content="2017-02-13">
               2017-02-13
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/11/material-design/" itemprop="url">
-                  material design
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posté le</span>
-            <time itemprop="dateCreated" datetime="2017-02-11T00:16:28+08:00" content="2017-02-11">
-              2017-02-11
             </time>
           </span>
 
@@ -1195,8 +1215,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">21</span>
-              <span class="site-state-item-name">articles</span>
+              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -1247,7 +1267,7 @@
 </div>
 
 <div class="theme-info">
-  Thème -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>

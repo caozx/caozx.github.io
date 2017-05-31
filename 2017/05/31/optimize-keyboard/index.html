@@ -84,16 +84,28 @@
 
 
 
-<meta name="description" content="Socket Heartbeat packet">
+<meta name="description" content="碍于设备屏幕小问题，最大限度方案客户操作方便，减少切换，尽量完善输入法样式editText.setKeyListener(listener);
+ KeyListener listener = new NumberKeyListener() {
+@Override
+protected char[] getAcceptedChars() {
+    char[] chars = new char[]{">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Heartbeat packet">
-<meta property="og:url" content="http://caozx.site/2017/04/30/socket-heartbeat/index.html">
+<meta property="og:title" content="Optimize keyboard">
+<meta property="og:url" content="http://caozx.site/2017/05/31/optimize-keyboard/index.html">
 <meta property="og:site_name" content="caozx'site">
-<meta property="og:description" content="Socket Heartbeat packet">
-<meta property="og:updated_time" content="2017-04-30T15:55:01.673Z">
+<meta property="og:description" content="碍于设备屏幕小问题，最大限度方案客户操作方便，减少切换，尽量完善输入法样式editText.setKeyListener(listener);
+ KeyListener listener = new NumberKeyListener() {
+@Override
+protected char[] getAcceptedChars() {
+    char[] chars = new char[]{">
+<meta property="og:updated_time" content="2017-05-31T15:54:32.397Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Heartbeat packet">
-<meta name="twitter:description" content="Socket Heartbeat packet">
+<meta name="twitter:title" content="Optimize keyboard">
+<meta name="twitter:description" content="碍于设备屏幕小问题，最大限度方案客户操作方便，减少切换，尽量完善输入法样式editText.setKeyListener(listener);
+ KeyListener listener = new NumberKeyListener() {
+@Override
+protected char[] getAcceptedChars() {
+    char[] chars = new char[]{">
 
 
 
@@ -114,9 +126,9 @@
 
 
 
-  <link rel="canonical" href="http://caozx.site/2017/04/30/socket-heartbeat/"/>
+  <link rel="canonical" href="http://caozx.site/2017/05/31/optimize-keyboard/"/>
 
-  <title> Heartbeat packet | caozx'site </title>
+  <title> Optimize keyboard | caozx'site </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -236,7 +248,7 @@
             
             
               
-                Heartbeat packet
+                Optimize keyboard
               
             
           </h1>
@@ -248,8 +260,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2017-04-30T23:54:28+08:00" content="2017-04-30">
-              2017-04-30
+            <time itemprop="dateCreated" datetime="2017-05-31T23:50:28+08:00" content="2017-05-31">
+              2017-05-31
             </time>
           </span>
 
@@ -276,8 +288,27 @@
       
 
       
-        <p>Socket Heartbeat packet</p>
-
+        <p>碍于设备屏幕小问题，最大限度方案客户操作方便，减少切换，尽量完善输入法样式<br>editText.setKeyListener(listener);</p>
+<p> KeyListener listener = new NumberKeyListener() {</p>
+<pre><code>@Override
+protected char[] getAcceptedChars() {
+    char[] chars = new char[]{&apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, &apos;5&apos;, &apos;6&apos;, &apos;7&apos;, &apos;8&apos;, &apos;9&apos;, &apos;X&apos;};
+    return chars;
+</code></pre><p>//            return new char[0];<br>        }</p>
+<pre><code>    /**
+     * 0：无键盘,键盘弹不出来
+     * 1：英文键盘
+     * 2：模拟键盘
+     * 3：数字键盘
+     *
+     * @return
+     */
+    @Override
+    public int getInputType() {
+        return 3;
+    }
+};
+</code></pre>
       
     </div>
 
@@ -302,17 +333,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/16/string-buffer-builder/" rel="next" title="String_StringBuffer_StringBuilder">
-                <i class="fa fa-chevron-left"></i> String_StringBuffer_StringBuilder
+              <a href="/2017/05/21/storage-path/" rel="next" title="storage path">
+                <i class="fa fa-chevron-left"></i> storage path
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/21/storage-path/" rel="prev" title="storage path">
-                storage path <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
